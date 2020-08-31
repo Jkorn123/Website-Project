@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Justin's Website</title>
   <style>
-    body {background-color: white;}
+    body {background-color: powderblue;}
     table, th, td {
       border: 0.1px solid black;
+
     }
     img {
       padding: 8px;
+
     }
     h1 {
       border: 3px solid blue;
-      background-color: powderblue;
     }
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    p {
+      text-align:center;
+    }
+
+
   </style>
 </head>
 <body>
   <h1 style="font-family:Times; text-align:center;">Justin's Website</h1>
-  <h2 style="font-family:Times; text-align:left;">Bio:</h2>
-  <img src="picture.jpg" width="150" height="150" />
+  <p><a href="#FF">Jump to Favorite Food</a></p>
+  <p><a href="#H">Jump to List of Hobbies</a></p>
+  <p><a href="#SD">Jump to Steve Jobs' Bio</a></p>
+  <h2 style="font-family:Times; text-align:center;">Bio:</h2>
 
-  <table style="width:15%">
+  <img src="picture.jpg" alt="Picture of Justin Korn" width="200" height="200" class="center" />
+
+  <table style= width:10.1%; class="center" >
     <tr>
       <td>FirstName</td>
       <th>Justin</th>
@@ -38,10 +54,32 @@
       <th>11th</th>
     </tr>
   </table>
-    <h3 style="font-family:Times; text-align:left;">Favorite Foods:</h3>
-    <p>Otoro (Sushi):</p>
-    <img src="sushi.jpg" width="150" height="150" />
-    <img src="pool.jpg" width="150" height="150" />
+
+    <hr>
+    <p id="FF"; style="font-family:Times; text-align:center;">Favorite Food:</p>
+    <p>Otoro (Sushi): </p>
+    <img src="sushi.jpg" alt="A Piece of Otoro" width="250" height="200" class="center" />
+    <hr>
+    <p id="H"; style="font-family:Times; text-align:left;">Hobbies:</p>
+      <ul>
+        <li>Ping Pong</li>
+        <li>Swimming</li>
+        <li>Piano</li>
+      </ul>
+    <p style="font-family:Times; text-align:left;">Ranking Hobbies:</p>
+      <ol>
+        <li>Swimming</li>
+        <li>Ping Poing</li>
+        <li>Piano</li>
+      </ol>
+
+      <img src="pool.jpg" alt="Lap Pool" width="250" height="200" />
+      <hr>
+      <p id="SD"; style="font-family: Times; text-align:center;">Steve Jobs Bio:</p>
+      <iframe src="https://en.wikipedia.org/wiki/Steve_Jobs" height="600" width="800" title="baseball stats" class="center"></iframe>
+      <br>
+      <hr>
+    <a href="https://www.apple.com/" target="_blank">Click this link to visit Apple's website! </a>
 
 </body>
 </html>
