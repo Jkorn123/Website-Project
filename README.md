@@ -6,4 +6,4 @@ Final commit: a5b2264 (Html Assignment)
 CSS Assignment complete on 9-18-20 (CSSProject.css)
 Final
 
-Final commit 
+Final commit: 4ffb325 (CSS Assignment)
