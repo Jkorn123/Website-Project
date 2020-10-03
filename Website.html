@@ -67,7 +67,10 @@
   </div>
 </div>
 
+<div class="container">
   <br/>
+  <input class="form-control" id="myInput" type="text" placeholder="Search..">
+  <br />
   <table class="table table-bordered">
     <thead>
       <tr class="table-dark text-dark">
@@ -78,7 +81,7 @@
         <th>School</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody id="myTable">
       <tr>
         <td>Justin</td>
         <td>Korn</td>
@@ -86,9 +89,27 @@
         <td>11th</td>
         <td>The Bishop's School</td>
       </tr>
+      <tr>
+        <td>Bryan</td>
+        <td>Korn</td>
+        <td>14</td>
+        <td>8th</td>
+        <td>The Bishop's School</td>
+      </tr>
 
     </tbody>
   </table>
+</div>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
 
     <hr />
       <p id="FF";><strong>Favorite Foods:</strong></span></p>
@@ -155,7 +176,7 @@
     <br />
     <hr />
     <p id="A"><strong>View Some of Apple's Products By Clicking On A Device Below!</strong></p>
-    <div><a href="https://www.apple.com/" target="_blank">Click this link to visit Apple's website!</a></div>
+    <div><a href="https://www.apple.com/" data-toggle="tooltip" title="Click on me!"target="_blank">Click this link to visit Apple's website!</a></div>
 
     <img src="Imagemap.jpg" alt="Iphone, Ipad, and Apple Watch" width="700" height="500" usemap="#workmap" />
 
